@@ -1,0 +1,156 @@
+/* --- RESET Y BASES --- */
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif JP', serif;
+    background-color: #fcfaf5;
+    color: #2c2c2c;
+    line-height: 1.8;
+}
+
+/* Texto decorativo vertical lateral */
+.vertical-text {
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    writing-mode: vertical-rl;
+    font-size: 2rem;
+    color: rgba(188, 0, 45, 0.2);
+    font-weight: 700;
+    pointer-events: none;
+}
+
+/* --- CABECERA --- */
+header {
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+.circle-sun {
+    width: 200px;
+    height: 200px;
+    background-color: #bc002d;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.07;
+    z-index: -1;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 0;
+    color: #1a1a1a;
+    letter-spacing: 15px;
+}
+
+/* --- NAVEGACIÓN --- */
+nav {
+    background-color: #1a1a1b;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 3px solid #bc002d;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 25px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+}
+
+/* --- CUERPO --- */
+main {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 30px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    border-left: 5px solid #bc002d;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.content-box { margin-bottom: 80px; }
+
+/* Tabla de info técnica */
+.info-table {
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Grid de cartas */
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.full-width { grid-column: 1 / span 2; }
+
+.card {
+    background: #fff;
+    padding: 40px;
+    border-top: 4px solid #1a1a1b;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.card h3 { color: #bc002d; margin-top: 0; }
+
+/* Estilo Zen para conceptos */
+.zen-box {
+    background-color: #1a1a1b;
+    color: #fff;
+    padding: 60px;
+    border-radius: 2px;
+    margin-bottom: 80px;
+}
+
+.zen-box h2 { border-color: #fff; color: #fff; }
+
+.concept-list .concept {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 15px;
+}
+
+.concept strong { color: #bc002d; display: block; font-size: 1.2rem; }
+
+/* --- FOOTER --- */
+footer {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 60px;
+    border-top: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .grid-section { grid-template-columns: 1fr; }
+    .full-width { grid-column: 1; }
+    h1 { font-size: 3rem; }
+}

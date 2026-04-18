@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-
+    scale=1.0">
+    <title>Mi PWA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+</head>
+<body>
+
+    <div class="vertical-text">日本国 - Nihon-koku</div>
+
+    <header>
+        <div class="circle-sun"></div>
+        <h1>日本</h1>
+        <p class="subtitle">Crónicas de la Tierra del Sol Naciente</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#geografia">Geografía</a></li>
+            <li><a href="#historia">Eras</a></li>
+            <li><a href="#filosofia">Filosofía</a></li>
+            <li><a href="#modernidad">Modernidad</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="geografia" class="content-box">
+            <h2>El Archipiélago de Fuego</h2>
+            <p>Japón no es solo un país, es un arco volcánico de más de 6,000 islas. El 70% de su territorio está cubierto por montañas y bosques indómitos, lo que ha obligado a su población a concentrarse en densas llanuras costeras, creando un contraste fascinante entre la naturaleza salvaje y la hiper-urbanización.</p>
+            <div class="info-table">
+                <div class="info-item"><strong>Capital:</strong> Tokio</div>
+                <div class="info-item"><strong>Islas Principales:</strong> Honshu, Hokkaido, Kyushu, Shikoku</div>
+                <div class="info-item"><strong>Punto más alto:</strong> Monte Fuji (3,776m)</div>
+            </div>
+        </section>
+
+        <section id="historia" class="grid-section">
+            <div class="card full-width">
+                <h3>El Shogunato y el Aislamiento (Edo)</h3>
+                <p>Durante más de 250 años (1603-1868), Japón vivió bajo el período Edo, una era de paz y aislamiento casi total del mundo exterior (*Sakoku*). Bajo el mando del clan Tokugawa, las artes como el teatro Kabuki y la pintura Ukiyo-e florecieron, mientras la clase samurái refinaba su código de ética.</p>
+            </div>
+            <div class="card">
+                <h3>Restauración Meiji</h3>
+                <p>El fin de los samuráis. En 1868, Japón pasó de un sistema feudal a una potencia industrial en apenas unas décadas, adoptando tecnología occidental sin perder su esencia espiritual.</p>
+            </div>
+            <div class="card">
+                <h3>Sengoku Jidai</h3>
+                <p>La "era de los estados en guerra". Un siglo de conflictos civiles donde figuras como Oda Nobunaga intentaron unificar la nación bajo un solo mando.</p>
+            </div>
+        </section>
+
+        <section id="filosofia" class="zen-box">
+            <h2>Estética y Pensamiento</h2>
+            <div class="concept-list">
+                <div class="concept">
+                    <strong>Wabi-Sabi:</strong> La belleza de la imperfección y la transitoriedad de las cosas.
+                </div>
+                <div class="concept">
+                    <strong>Ikigai:</strong> El concepto de "la razón de vivir" o aquello que nos hace levantarnos cada mañana.
+                </div>
+                <div class="concept">
+                    <strong>Kintsugi:</strong> El arte de reparar cerámica rota con oro, entendiendo que las cicatrices hacen al objeto más bello.
+                </div>
+            </div>
+        </section>
+
+        <section id="modernidad" class="content-box">
+            <h2>Tecnología y Tradición</h2>
+            <p>En las calles de Akihabara o Shinjuku, los neones de última generación conviven con pequeños santuarios sintoístas ocultos en callejones. Esta dualidad es el corazón del Japón moderno: una nación que lidera la robótica mundial mientras mantiene festivales (*Matsuri*) que datan de hace mil años.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Integridad • Respeto • Valor</p>
+        <p>&copy; 2026 - Un viaje a través del archipiélago.</p>
+    </footer>
+
+
+
+
+
+<script>
+if ("serviceWorker" in navigator) {
+navigator.serviceWorker.register("sw.js")
+.then(() => console.log("Service Worker registrado"));
+}
+</script>
+</body>
+</html>
