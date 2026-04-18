@@ -17,3 +17,10 @@ return response || fetch(event.request);
 })
 );
 });
+self.addEventListener('install', (event) => {
+// Fuerza al Service Worker nuevo a convertirse en el activo
+self.skipWaiting();
+});
+self.addEventListener('activate', (event) => {
+event.waitUntil(clients.claim());
+});
