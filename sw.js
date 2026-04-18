@@ -1,6 +1,6 @@
 self.addEventListener("install", event => {
 event.waitUntil(
-caches.open("mi-cache5").then(cache => {
+caches.open("mi-cacheeeeeeee").then(cache => {
 return cache.addAll([
 "./",
 "./index.html",
